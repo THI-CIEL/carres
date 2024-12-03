@@ -62,3 +62,16 @@ void CCarre::Deplacer(int dx1, int dy1)
 	this->sy += dy1;
 }
 
+CCarre::CCarre()
+{
+	this->sx = 0;
+	this->sy = 0;
+	this->cote = 0;
+}
+CCarre::CCarre(int sx1, int sy1, unsigned int cote1)
+{
+	this->sx = sx1;
+	this->sy = sy1;
+	this->cote = cote1;
+}
+

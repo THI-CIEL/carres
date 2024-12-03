@@ -11,6 +11,8 @@ private:
 	int sy;
 	unsigned int cote;
 public:
+	CCarre();
+	CCarre(int, int ,unsigned int);
 	//Fonction : Affecte la valeur de sx1 à sx
 	//Paramètre(s) d'entré(s) : int sx1
 	//Paramètre(s) sortis(s)  : None : Void
