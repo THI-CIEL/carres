@@ -24,3 +24,37 @@ void CCarre::Afficher()
 {
 	cout << "Proprietes du carre : \n   - Longueur : " << sx << "\n   - Hauteur : " << sy << "\n   - Longueur du cote : " << cote << "\n";
 }
+
+int CCarre::Getsx()
+{
+	return sx;
+}
+int CCarre::Getsy()
+{
+	return sy;
+}
+unsigned int CCarre::Getcote()
+{
+	return cote;
+}
+
+void CCarre::Deplacer(char direction, int saut)
+{
+	switch(direction)
+	{
+	case 'n':
+		this->sy -= saut;
+		break;
+	case 's':
+		this->sy += saut;
+		break;
+	case 'e':
+		this->sx += saut;
+		break;
+	case 'w':
+		this->sx -= saut;
+		break;
+	} 
+	CCarre::Afficher();
+}
+
